@@ -1,6 +1,4 @@
-.backdrop.is-hidden .modal {
-    transform: translate(50%, 50%) scale(1.1);
-}
+
 
 .modal {
     position: absolute;
@@ -15,35 +13,13 @@
 
     transform: translate(50%, 50%) scale(1); 
     transition: transform var(--transition-time) var(--transiton-function);
+
+    .backdrop.is-hidden & {
+        transform: translate(50%, 50%) scale(1.1);
+    }
 }
 
-.modal-close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-
-    background-color: var(--background-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.modal-close-btn-icon {
-    fill: var(--logo-black-color);
-    transition: fill var(--transition-time) var(--transiton-function);
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-    fill:var(--accent-color);
-}
-
-.modal-title {
+.modal__title {
     margin-bottom: 12px;
 
     font-size: 20px;

@@ -1,4 +1,4 @@
-.customers .section-title {
+.customers__title {
     margin-bottom: 50px;
 }
 
@@ -7,11 +7,11 @@
 
 }
 
-.customers-list-item:not(:last-child) {
+.customers-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.customers-list-item-link {
+.customers-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +30,13 @@
 
 
 
-.customers-list-item-link-icon {
+.customers-list__icon {
     fill:var(--social-links-color);
 
     transition: fill var(--transition-time) var(--transiton-function);
 
-    .customers-list-item-link:hover &,
-    .customers-list-item-link:focus & {
+    .customers-list__link:hover &,
+    .customers-list__link:focus & {
     fill:var(--accent-color);
 }
 }
